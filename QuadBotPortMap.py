@@ -14,7 +14,7 @@ colorSensorLeft = ColorSensor(Port.E)
 colorSensorRight = ColorSensor(Port.A)
 drivebase = DriveBase(motorLeft,motorRight,56,96.5)
 
-drivebase.use_gyro(False)
+drivebase.use_gyro(True)
 
 def shift(gear):
     angle = gear * 90
