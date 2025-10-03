@@ -18,8 +18,14 @@ drivebase.use_gyro(True)
 
 #gear=0 is back left gear; gear=1 is back right gear; gear=2 is front left gear; gear=3 is front right gear
 def shift(gear):
+<<<<<<< HEAD
     motorAttachment.reset_angle(None) #reset to value of absolute encoder rather than offset value from PyBricks
     angle = gear * 90 + 45
+=======
+    #Shouldn't this be motorShift??
+    #motorAttachment.reset_angle(None) #reset to value of absolute encoder rather than offset value from PyBricks
+    angle = gear * 90 + 60
+>>>>>>> 79946b41e055ba75d4a95d5c5b3d2b20edb6675a
     motorShift.run_target(100, angle)
 
 def  use_attachment(angle, speed):
