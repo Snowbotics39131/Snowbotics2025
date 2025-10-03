@@ -8,4 +8,7 @@ hub = InventorHub()
 
 from QuadBotPortMap import *
 
-use_attachment(1000, 300)
+shift(2)
+#use_attachment(10000, 100000 )
+shift(3)
+use_attachment(1000, 100000)
