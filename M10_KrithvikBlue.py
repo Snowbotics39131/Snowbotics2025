@@ -1,4 +1,5 @@
 from QuadBotPortMap import  *
+    
 def drive_code():
     drivebase.straight(150)
     drivebase.turn(-90)
@@ -24,9 +25,10 @@ def drive_code():
     drivebase.straight(-175)
     shift(1)
     use_attachment(-160,1000)
-
-    import IndianaJones
-
+    drivebase.straight(90)
+    drivebase.turn(60)
+    drivebase.settings(straight_speed=900, straight_acceleration=900, turn_rate=500, turn_acceleration=500)
+    drivebase.straight(400)
 
 #(5-11)
     
