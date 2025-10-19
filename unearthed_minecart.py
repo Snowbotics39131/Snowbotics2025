@@ -8,10 +8,14 @@ hub = InventorHub()
 
 from QuadBotPortMap import *
 
-#drivebase.straight(150)
-#drivebase.straight(10)
+
 shift(2)
-#use_attachment(10000, 600)
+use_attachment(-150000, 800)
+#drivebase.settings(straight_speed=180)
+#drivebase.straight(250)
+#drivebase.straight(-30)
+shift(2)
 use_attachment(100000, 600)
+#use_attachment(100000, 600)
 
 
