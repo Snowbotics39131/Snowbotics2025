@@ -17,10 +17,13 @@ drivebase = DriveBase(motorLeft,motorRight,56,96.5)
 drivebase.use_gyro(True)
 
 #gear=0 is back left gear; gear=1 is back right gear; gear=2 is front left gear; gear=3 is front right gear
-def shift(gear):
+async def shift(gear):
     motorShift.reset_angle(None) #reset to value of absolute encoder rather than offset value from PyBricks
     angle = gear * 90 + 45
-    motorShift.run_target(100, angle)
+    motorShift.run_target(100, angle, wait=False)
 
-def  use_attachment(angle, speed):
-    motorAttachment.run_angle(speed, angle)
+async def  use_attachment(angle, speed):
+   await motorAttachment.run_angle(speed, -angle)
+
+async def  use_attachment_async(angle, speed):
+   motorAttachment.run_angle(speed, -angle, wait=False)

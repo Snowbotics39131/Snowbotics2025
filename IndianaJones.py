@@ -30,4 +30,5 @@ async def Indiana_Jones():
         "F4/4", "E4/5", "D4/16", "C4/1_", "C4/1"
     ], tempo=120)
 
-run_task(Indiana_Jones())
+if __name__ == "__main__": #run on file run but not import
+    run_task(Indiana_Jones())
