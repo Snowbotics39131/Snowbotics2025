@@ -13,5 +13,5 @@ async def drive_code():
     await use_attachment(2000, 700)
     await db.straight(-100)
 
-run_task(drive_code())
-import IndianaJones
+if __name__ == "__main__": #run on file run but not import
+    run_task(drive_code())
