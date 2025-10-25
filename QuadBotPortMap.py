@@ -22,6 +22,7 @@ async def shift(gear):
     angle = gear * 90 + 45
     motorShift.run_target(100, angle, wait=False)
 
+#clockwise=negative angle; counterclockwise=positive angle
 async def  use_attachment(angle, speed):
    await motorAttachment.run_angle(speed, -angle)
 
