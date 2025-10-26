@@ -1,5 +1,6 @@
 from QuadBotPortMap import *
 drivebase.settings(straight_speed=300, straight_acceleration=400)
+shift(1)
 drivebase.straight(610)
 drivebase.turn(40) #40
 drivebase.straight(55)
@@ -19,7 +20,6 @@ drivebase.turn(30)
 drivebase.straight(200)
 drivebase.turn(-30)
 drivebase.straight(220)
-shift(1)
 drivebase.turn(45)
 
 run_task(use_attachment(180, 10000))
