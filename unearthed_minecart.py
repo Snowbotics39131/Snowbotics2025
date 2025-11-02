@@ -4,17 +4,12 @@ async def drive_code():
     #shift(2)
     #use_attachment(-150000, 
     drivebase.settings(straight_speed=500)
-    await multitask (drivebase.straight(250), shift(2))
-    await use_attachment(-70000, 600)
-    await use_attachment(70000, 600)
-    await shift(3)
-    await use_attachment(70000, 1000)
-    await drivebase.turn(45)
-    await drivebase.straight(100)
-    await drivebase.turn(90)
-    await drivebase.straight(150)
-    await drivebase.turn(-45)
-    await drivebase.straight(1000)
+    #await multitask (drivebase.straight(250), shift(2))
+    await shift(2)
+    await wait(1000)
+    await use_attachment(-700, 600)
+    await use_attachment(700, 600)
+    
 
 
 run_task(drive_code())
