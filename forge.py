@@ -2,21 +2,22 @@ from QuadBotPortMap import *
 # right 3,1
 drivebase.settings(straight_speed=300, straight_acceleration=500)
 run_task(shift(1))
+run_task(run_attachment_stalled(100,30))
 drivebase.straight(610)
-drivebase.turn(45) #42
+drivebase.turn(45) #45
 drivebase.straight(40)
-drivebase.turn(-22) #20
+drivebase.turn(-22) #23
 drivebase.straight(-80)
-drivebase.turn(-25) #2
+drivebase.turn(-23) #0
 drivebase.straight(140)
-use_attachment(300,600)
-drivebase.turn(-27) #-25
+drivebase.turn(-27) #-27
 drivebase.straight(-20)
-drivebase.turn(-65)
+drivebase.turn(-63) #-92
 drivebase.straight(-75)
-run_task(use_attachment(170,1000))
+run_task(use_attachment(90,1000))
+run_task(use_attachment(190,1000))
 drivebase.straight(-200)
-run_task(use_attachment(-200, 1000))
+run_task(use_attachment(-240, 1000))
 drivebase.straight(370)
 drivebase.turn(30)
 drivebase.straight(200)
