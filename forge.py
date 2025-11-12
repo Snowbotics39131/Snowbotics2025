@@ -25,6 +25,10 @@ drivebase.turn(-30)
 drivebase.straight(290)
 drivebase.turn(45)
 print(drivebase.angle())
+<<<<<<< HEAD
+=======
+run_task(shift(1))
+>>>>>>> 251066a40c971286148740e78706d7744c6525c8
 # drivebase.settings(straight_speed=500, straight_acceleration=500)
 drivebase.straight(-300)
 drivebase.straight(15)
