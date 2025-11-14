@@ -1,6 +1,7 @@
 from QuadBotPortMap import *
 # right 3,1
 drivebase.settings(straight_speed=300, straight_acceleration=500)
+print(drivebase.settings())
 run_task(shift(1))
 run_task(run_attachment_stalled(100,30))
 drivebase.straight(610)
@@ -33,9 +34,17 @@ drivebase.straight(110)
 drivebase.turn(-45)
 drivebase.straight(-300)
 drivebase.turn(45)
-drivebase.straight(-250)
+drivebase.straight(-260)
 drivebase.turn(90)
-drivebase.straight(-500)
+drivebase.straight(-210)
+drivebase.straight(200)
+drivebase.turn(-45)
+# drivebase.straight(-500)
+
+drivebase.settings(straight_speed=900, straight_acceleration=900, turn_rate=900, turn_acceleration=900)
+drivebase.arc(1000, angle=-35, distance=None, then=Stop.HOLD, wait=True)
+drivebase.settings(straight_speed=300, straight_acceleration=500, turn_rate=193, turn_acceleration=870)
+
 # drivebase.straight(100)
 # drivebase.turn(90)
 # drivebase.straight(67)
