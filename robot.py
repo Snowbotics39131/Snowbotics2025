@@ -1,7 +1,9 @@
 import QuadBotPortMap
 from IndianaJones import *
+from Song_Library import *
 from pybricks.tools import hub_menu
-mission = hub_menu(1,2,3,4,5)
+print(hub.battery.voltage(), "<- This value should be at least 8000 to run.")
+mission = hub_menu(1,2,3,4,5,6,7,8,9,10)
 print(mission)
 
 #(forge)_alignment=-----FrontLeft-----15x, 8y_RIGHT
@@ -23,6 +25,12 @@ if mission == 4:
 if mission == 5:
     import mine_cart
 if mission == 6:
-    run_task(Indiana_Jones())
+    import TheAwsomest
 if mission == 7:
+    run_task(Indiana_Jones())
+if mission == 8:
     import Seven_Nation_Army
+if mission == 9:
+    run_task(mission_imposible())
+if mission == 10:
+    run_task(Mii_Channel_Theme())

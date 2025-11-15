@@ -23,7 +23,7 @@ drivebase.straight(370)
 drivebase.turn(30)
 drivebase.straight(200)
 drivebase.turn(-30)
-drivebase.straight(295)
+drivebase.straight(305) # here
 drivebase.turn(45)
 print(drivebase.angle())
 # drivebase.settings(straight_speed=500, straight_acceleration=500)
