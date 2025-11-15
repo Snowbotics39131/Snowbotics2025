@@ -1,0 +1,13 @@
+from QuadBotPortMap import *
+run_task(shift(1))
+drivebase.straight(-610)
+run_task(run_attachment_stalled(-1000,40))
+drivebase.turn(90)
+wait (200)
+drivebase.straight(-410)
+drivebase.turn(-90)
+run_task(use_attachment(-1500,400))
+drivebase.straight(-40)
+drivebase.straight(40)
+drivebase.straight(-50)
+drivebase.straight(45)

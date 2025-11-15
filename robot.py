@@ -1,6 +1,7 @@
 import QuadBotPortMap
+from IndianaJones import *
 from pybricks.tools import hub_menu
-mission = hub_menu(1,2,3,4)
+mission = hub_menu(1,2,3,4,5)
 print(mission)
 
 #(forge)_alignment=-----FrontLeft-----15x, 8y_RIGHT
@@ -19,3 +20,9 @@ if mission == 3:
     import TheMostAwesome
 if mission == 4:
     import sand_3
+if mission == 5:
+    import mine_cart
+if mission == 6:
+    run_task(Indiana_Jones())
+if mission == 7:
+    import Seven_Nation_Army
