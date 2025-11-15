@@ -19,7 +19,7 @@ async def drive_code():
     await drivebase.turn(-90)
     await drivebase.straight(110)
     await drivebase.turn(90)
-    await drivebase.straight(-270)
+    await drivebase.straight(-275)
     await drivebase.straight(175)
     await drivebase.turn(-90)
     await drivebase.straight(-175)
